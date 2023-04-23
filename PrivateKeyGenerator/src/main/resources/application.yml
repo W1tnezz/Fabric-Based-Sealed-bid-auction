@@ -1,0 +1,8 @@
+server:
+  port: 8080
+  ssl:
+    key-store: PrivateKeyGenerator/server.keystore
+    key-store-password: 990828
+    key-store-type: JKS
+    key-alias: tomcat
+    enabled: false
