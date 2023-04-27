@@ -10,22 +10,14 @@ import org.hyperledger.fabric.shim.ledger.KeyModification;
 import org.hyperledger.fabric.shim.ledger.KeyValue;
 import org.hyperledger.fabric.shim.ledger.QueryResultsIterator;
 import com.njupt.chaincode.model.User;
+
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-/**
- * 智能合约
- *
- * @author zlt
- * @version 1.0
- * @date 2022/2/8
- * <p>
- * Blog: https://zlt2000.gitee.io
- * Github: https://github.com/zlt2000
- */
-@Contract(name = "mychaincode")
+@Contract(name = "sealed-bid")
 @Default
 public class MyAssetChaincode implements ContractInterface {
     public  MyAssetChaincode() {}
@@ -93,6 +85,7 @@ public class MyAssetChaincode implements ContractInterface {
             System.out.println(user);
             userList.add(user);
         }
+        stub.setEvent("queryAllEvent", getUser(ctx, "2").toString().getBytes(StandardCharsets.UTF_8));
         return JSON.toJSONString(userList);
     }
 

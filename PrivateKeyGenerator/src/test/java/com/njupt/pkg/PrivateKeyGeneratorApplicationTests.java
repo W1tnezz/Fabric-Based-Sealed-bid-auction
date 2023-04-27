@@ -10,6 +10,7 @@ class PrivateKeyGeneratorApplicationTests {
 
     @Autowired
     private PrivateKeyGenerator pkg;
+
     @Test
     void testPrivateKeyGenerator(){
         System.out.println(pkg.getMasterPublicKey());

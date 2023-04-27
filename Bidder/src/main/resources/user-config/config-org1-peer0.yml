@@ -1,0 +1,5 @@
+mspId: Org1MSP
+certificatePath: /home/indistinguishable/IdeaProjects/Fabric-Based-Sealed-Bid-Auction/Bidder/src/main/resources/crypto-config/peerOrganizations/org1.example.com/users/User1@org1.example.com/msp/signcerts/User1@org1.example.com-cert.pem
+privateKeyPath: /home/indistinguishable/IdeaProjects/Fabric-Based-Sealed-Bid-Auction/Bidder/src/main/resources/crypto-config/peerOrganizations/org1.example.com/users/User1@org1.example.com/msp/keystore/priv_sk
+tlsCertPath: /home/indistinguishable/IdeaProjects/Fabric-Based-Sealed-Bid-Auction/Bidder/src/main/resources/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/ca.crt
+channel: mychannel

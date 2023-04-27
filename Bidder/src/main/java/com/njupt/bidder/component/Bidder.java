@@ -18,11 +18,9 @@ public class Bidder {
     public String getIdentity() {
         return identity;
     }
-
     public Element getSecretKey() {
         return secretKey;
     }
-
     public int getBid() {
         return bid;
     }

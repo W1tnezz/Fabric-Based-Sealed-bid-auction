@@ -5,11 +5,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.example</groupId>
-    <artifactId>Sealed-Bid-Auction</artifactId>
+    <artifactId>Fabric-Based-Sealed-Bid-Auction</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <modules>
-        <module>Fabric-SDK</module>
         <module>Fabric-Chaincode</module>
     </modules>
 
