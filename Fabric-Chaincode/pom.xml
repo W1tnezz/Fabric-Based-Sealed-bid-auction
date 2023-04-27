@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>org.example</groupId>
-        <artifactId>Fabric-Based-Sealed-Bid-Auction</artifactId>
+        <artifactId>Fabric-Based-Sealed-bid-auction</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
 

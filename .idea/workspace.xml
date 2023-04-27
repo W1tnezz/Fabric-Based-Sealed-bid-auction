@@ -4,25 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="38c6a916-0777-4e6b-b80a-f560e6cf49cb" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Bidder/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Bidder/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bidder/src/main/java/com/njupt/bidder/BidderApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bidder/src/main/java/com/njupt/bidder/BidderApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bidder/src/main/java/com/njupt/bidder/component/Bidder.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bidder/src/main/java/com/njupt/bidder/component/Bidder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bidder/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Bidder/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bidder/src/test/java/com/njupt/bidder/BidderConfigApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bidder/src/test/java/com/njupt/bidder/BidderConfigApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fabric-Chaincode/src/main/java/com/njupt/chaincode/MyAssetChaincode.java" beforeDir="false" afterPath="$PROJECT_DIR$/Fabric-Chaincode/src/main/java/com/njupt/chaincode/MyAssetChaincode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fabric-Chaincode/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/Fabric-Chaincode/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fabric-Chaincode/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/Fabric-Chaincode/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PrivateKeyGenerator/src/test/java/com/njupt/pkg/PrivateKeyGeneratorApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/PrivateKeyGenerator/src/test/java/com/njupt/pkg/PrivateKeyGeneratorApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-    </list>
+    <list default="true" id="75829383-fb15-45bb-a7b0-951694b20433" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -31,7 +25,6 @@
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="mavenHome" value="/usr/local/maven/apache-maven-3.9.1" />
-        <option name="useMavenConfig" value="true" />
         <option name="userSettingsFile" value="/usr/local/maven/apache-maven-3.9.1/conf/settings.xml" />
       </MavenGeneralSettings>
     </option>
@@ -41,52 +34,212 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectId" id="2OznxNFXbIgadaJs3wAo6WMJPCO" />
+  <component name="ProjectId" id="2OmFS8UbU6jBjut7vytBAyyz2iY" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/indistinguishable/IdeaProjects/Fabric-Based-Sealed-bid-auction/Bidder",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "MavenSettings",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/indistinguishable/IdeaProjects/Fabric-Based-Sealed-bid-auction&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.14453125&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2719919&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;e19355fc6a22e7c2547be7af6811f098&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager">
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="Fabric-Based-Sealed-bid-auction" />
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Bidder/src/main/resources" />
+      <recent name="$PROJECT_DIR$/Bidder/src/main/java/com/njupt/bidder/fabric" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Fabric-SDK/src/main/resources/" />
+      <recent name="$PROJECT_DIR$/PrivateKeyGenerator" />
+      <recent name="$PROJECT_DIR$/PrivateKeyGenerator/src/main/resources" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.PrivateKeyGeneratorApplication">
+    <configuration name="FabricInit" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.fabric.FabricInit" />
+      <module name="Fabric-SDK" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.fabric.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="Fabric-Based-Sealed-bid-auction" />
-      <option name="filePath" />
+    <configuration name="BidderConfigApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Bidder" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.njupt.bidder.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.njupt.bidder" />
+      <option name="MAIN_CLASS_NAME" value="com.njupt.bidder.BidderConfigApplicationTests" />
+      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PrivateKeyGeneratorApplicationTests.testPrivateKeyGenerator (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PrivateKeyGenerator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.njupt.pkg.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.njupt.pkg" />
+      <option name="MAIN_CLASS_NAME" value="com.njupt.pkg.PrivateKeyGeneratorApplicationTests" />
+      <option name="METHOD_NAME" value="testPrivateKeyGenerator" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BidderApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="Bidder" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.njupt.bidder.BidderApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BidderApplication (2)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="Bidder" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.njupt.bidder.BidderApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BidderApplication (3)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="Bidder" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.njupt.bidder.BidderApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BidderApplication (4)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="Bidder" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.njupt.bidder.BidderApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BidderApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" activateToolWindowBeforeRun="false" nameIsGenerated="true">
+      <option name="INCLUDE_PROVIDED_SCOPE" value="false" />
+      <module name="Bidder" />
+      <option name="PROGRAM_PARAMETERS" value="--filePath=$PROJECT_DIR$/Bidder/src/main/resources/user-config/config-org1-peer0.yml" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.njupt.bidder.BidderApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FabricCaServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="Fabric-CA-Server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.njupt.fabricca.FabricCaServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PrivateKeyGeneratorApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="PrivateKeyGenerator" />
+      <option name="PROGRAM_PARAMETERS" value="--file=/opt/" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.njupt.pkg.PrivateKeyGeneratorApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.njupt.pkg.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.FabricInit" />
+      <item itemvalue="JUnit.BidderConfigApplicationTests.contextLoads" />
+      <item itemvalue="JUnit.PrivateKeyGeneratorApplicationTests.testPrivateKeyGenerator (1)" />
+      <item itemvalue="Spring Boot.FabricCaServerApplication" />
+      <item itemvalue="Spring Boot.BidderApplication" />
+      <item itemvalue="Spring Boot.BidderApplication (1)" />
+      <item itemvalue="Spring Boot.BidderApplication (2)" />
+      <item itemvalue="Spring Boot.BidderApplication (3)" />
+      <item itemvalue="Spring Boot.BidderApplication (4)" />
+      <item itemvalue="Spring Boot.PrivateKeyGeneratorApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.PrivateKeyGeneratorApplication" />
+        <item itemvalue="JUnit.BidderConfigApplicationTests.contextLoads" />
+        <item itemvalue="JUnit.PrivateKeyGeneratorApplicationTests.testPrivateKeyGenerator (1)" />
+        <item itemvalue="Application.FabricInit" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpringBootOptions">
+    <option name="showAdditionalConfigNotification" value="false" />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="38c6a916-0777-4e6b-b80a-f560e6cf49cb" name="Changes" comment="" />
-      <created>1682572523724</created>
+      <changelist id="75829383-fb15-45bb-a7b0-951694b20433" name="Changes" comment="" />
+      <created>1682157847913</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1682572523724</updated>
-      <workItem from="1682572524752" duration="83000" />
+      <updated>1682157847913</updated>
+      <workItem from="1682157849484" duration="5538000" />
+      <workItem from="1682167188221" duration="3613000" />
+      <workItem from="1682213884110" duration="9999000" />
+      <workItem from="1682232396760" duration="7351000" />
+      <workItem from="1682240853953" duration="1996000" />
+      <workItem from="1682248383487" duration="898000" />
+      <workItem from="1682261222816" duration="823000" />
+      <workItem from="1682301489224" duration="4520000" />
+      <workItem from="1682318187234" duration="4932000" />
+      <workItem from="1682326487241" duration="4122000" />
+      <workItem from="1682332511957" duration="484000" />
+      <workItem from="1682338808659" duration="1270000" />
+      <workItem from="1682340083708" duration="1729000" />
+      <workItem from="1682481234215" duration="1075000" />
+      <workItem from="1682560371873" duration="6965000" />
+      <workItem from="1682572726568" duration="450000" />
+      <workItem from="1682573553411" duration="70000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="application.yml" />
   </component>
 </project>

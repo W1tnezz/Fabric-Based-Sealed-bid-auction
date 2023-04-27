@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Bidder/src/main/main.iml" filepath="$PROJECT_DIR$/Bidder/src/main/main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Bidder/src/test/test.iml" filepath="$PROJECT_DIR$/Bidder/src/test/test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Sealed-Bid-Auction.iml" filepath="$PROJECT_DIR$/Sealed-Bid-Auction.iml" />
     </modules>
   </component>
 </project>

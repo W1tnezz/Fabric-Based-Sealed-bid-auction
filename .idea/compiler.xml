@@ -2,12 +2,28 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Fabric-Chaincode" />
+        <module name="Bidder" />
+        <module name="Fabric-CA-Server" />
+        <module name="PrivateKeyGenerator" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Fabric-Gateway-SDK1" target="1.8" />
+      <module name="Fabric-SDK" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Bidder" options="-parameters" />
+      <module name="Fabric-CA-Server" options="-parameters" />
+      <module name="Fabric-Gateway-SDK1" options="-parameters" />
+      <module name="PrivateKeyGenerator" options="-parameters" />
+    </option>
   </component>
 </project>
