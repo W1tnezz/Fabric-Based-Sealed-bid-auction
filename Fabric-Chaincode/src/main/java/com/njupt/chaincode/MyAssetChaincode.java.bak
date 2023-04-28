@@ -10,7 +10,6 @@ import org.hyperledger.fabric.shim.ledger.KeyModification;
 import org.hyperledger.fabric.shim.ledger.KeyValue;
 import org.hyperledger.fabric.shim.ledger.QueryResultsIterator;
 import com.njupt.chaincode.model.User;
-
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -27,9 +26,6 @@ public class MyAssetChaincode implements ContractInterface {
      */
     @Transaction(intent = Transaction.TYPE.SUBMIT)
     public void init(final Context ctx) {
-        addUser(ctx, "1", "zlt",100D);
-        addUser(ctx, "2", "admin",200D);
-        addUser(ctx, "3", "guest",300D);
     }
 
     /**

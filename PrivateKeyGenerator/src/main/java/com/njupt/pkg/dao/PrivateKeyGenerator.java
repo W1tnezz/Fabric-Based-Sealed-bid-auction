@@ -8,6 +8,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Repository;
 import java.nio.charset.StandardCharsets;
+import java.sql.SQLOutput;
 
 @Repository
 public class PrivateKeyGenerator {
@@ -27,7 +28,7 @@ public class PrivateKeyGenerator {
         this.G1 = pairing.getG1();
         this.masterSecretKey = Zr.newRandomElement().getImmutable();
         this.groupGenerator = G1.newElementFromHash("ArrayIndexOutOfBoundsException".getBytes(StandardCharsets.UTF_8), 0, 30).getImmutable();
-        this.masterPublicKey = groupGenerator.mulZn(masterSecretKey);
+        this.masterPublicKey = groupGenerator.mulZn(masterSecretKey).getImmutable();
         logger.info("PKG初始化完毕");
         logger.info("群生成元 :" + groupGenerator.toString());
         logger.info("主公钥  :" + masterPublicKey.toString());
@@ -39,7 +40,8 @@ public class PrivateKeyGenerator {
 
     public Element getUserPrivateKey(String userIdentity){
         byte[] userIdentityBytes = userIdentity.getBytes(StandardCharsets.UTF_8);
-        Element zr = Zr.newElementFromHash(userIdentityBytes, 0, userIdentityBytes.length);
-        return groupGenerator.mulZn(zr);
+        Element idHash = G1.newElementFromHash(userIdentityBytes, 0, userIdentityBytes.length);
+        System.out.println(idHash);
+        return idHash.mulZn(masterSecretKey);
     }
 }

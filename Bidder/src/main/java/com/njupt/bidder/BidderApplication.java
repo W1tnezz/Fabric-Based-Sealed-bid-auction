@@ -1,5 +1,6 @@
 package com.njupt.bidder;
 
+import com.njupt.bidder.component.Bidder;
 import org.hyperledger.fabric.client.CommitException;
 import org.hyperledger.fabric.client.Contract;
 import org.hyperledger.fabric.client.GatewayException;
@@ -11,8 +12,11 @@ import org.springframework.context.ApplicationContext;
 public class BidderApplication {
     public static void main(String[] args) throws GatewayException, CommitException {
         ApplicationContext applicationContext = SpringApplication.run(BidderApplication.class, args);
+//        System.out.println(new String(contract.submitTransaction("queryAll")));
+        Bidder bidder = applicationContext.getBean(Bidder.class);
         Contract contract = applicationContext.getBean(Contract.class);
-        System.out.println(new String(contract.submitTransaction("queryAll")));
+        bidder.getFirstRoundInput();
+
 
     }
 }

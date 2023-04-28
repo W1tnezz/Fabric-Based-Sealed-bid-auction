@@ -1,2 +1,1 @@
-com/njupt/chaincode/model/User.class
-com/njupt/chaincode/MyAssetChaincode.class
+com/njupt/chaincode/SealedBidAuctionChaincode.class

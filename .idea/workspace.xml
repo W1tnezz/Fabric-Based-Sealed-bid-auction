@@ -4,7 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="75829383-fb15-45bb-a7b0-951694b20433" name="Changes" comment="" />
+    <list default="true" id="75829383-fb15-45bb-a7b0-951694b20433" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Bidder/src/main/java/com/njupt/bidder/pojo/FirstRoundInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bidder/src/main/java/com/njupt/bidder/BidderApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bidder/src/main/java/com/njupt/bidder/BidderApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bidder/src/main/java/com/njupt/bidder/component/Bidder.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bidder/src/main/java/com/njupt/bidder/component/Bidder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bidder/src/main/java/com/njupt/bidder/component/PrivateKeyGeneratorConnector.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bidder/src/main/java/com/njupt/bidder/component/PrivateKeyGeneratorConnector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bidder/src/main/java/com/njupt/bidder/configs/PairingConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bidder/src/main/java/com/njupt/bidder/utils/CryptoUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bidder/src/main/java/com/njupt/bidder/configs/RestTemplateConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bidder/src/main/java/com/njupt/bidder/configs/RestTemplateConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fabric-Chaincode/src/main/java/com/njupt/chaincode/MyAssetChaincode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fabric-Chaincode/src/main/java/com/njupt/chaincode/model/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fabric-Chaincode/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/Fabric-Chaincode/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fabric-Chaincode/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/Fabric-Chaincode/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PrivateKeyGenerator/src/main/java/com/njupt/pkg/dao/PrivateKeyGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/PrivateKeyGenerator/src/main/java/com/njupt/pkg/dao/PrivateKeyGenerator.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,6 +30,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -35,6 +51,9 @@
     </option>
   </component>
   <component name="ProjectId" id="2OmFS8UbU6jBjut7vytBAyyz2iY" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -58,7 +77,7 @@
     &quot;project.structure.proportion&quot;: &quot;0.14453125&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2719919&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;e19355fc6a22e7c2547be7af6811f098&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;57871191bd7f93cd980b7b2cf4dcb41a&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -80,7 +99,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.PrivateKeyGeneratorApplication">
+  <component name="RunManager" selected="Spring Boot.BidderApplication">
     <configuration name="FabricInit" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.fabric.FabricInit" />
       <module name="Fabric-SDK" />
@@ -157,7 +176,7 @@
     <configuration name="BidderApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" activateToolWindowBeforeRun="false" nameIsGenerated="true">
       <option name="INCLUDE_PROVIDED_SCOPE" value="false" />
       <module name="Bidder" />
-      <option name="PROGRAM_PARAMETERS" value="--filePath=$PROJECT_DIR$/Bidder/src/main/resources/user-config/config-org1-peer0.yml" />
+      <option name="PROGRAM_PARAMETERS" value="--identity=bidder1 --filePath=$PROJECT_DIR$/Bidder/src/main/resources/user-config/config-org1-peer0.yml" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.njupt.bidder.BidderApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -233,6 +252,12 @@
       <workItem from="1682560371873" duration="6965000" />
       <workItem from="1682572726568" duration="450000" />
       <workItem from="1682573553411" duration="70000" />
+      <workItem from="1682573666987" duration="324000" />
+      <workItem from="1682574031645" duration="637000" />
+      <workItem from="1682580837810" duration="5742000" />
+      <workItem from="1682598593194" duration="4365000" />
+      <workItem from="1682651854719" duration="1226000" />
+      <workItem from="1682655362636" duration="3412000" />
     </task>
     <servers />
   </component>
