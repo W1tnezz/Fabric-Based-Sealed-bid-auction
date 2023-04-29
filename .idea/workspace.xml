@@ -5,18 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75829383-fb15-45bb-a7b0-951694b20433" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Bidder/src/main/java/com/njupt/bidder/pojo/FirstRoundInput.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bidder/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Bidder/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Bidder/src/main/java/com/njupt/bidder/BidderApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bidder/src/main/java/com/njupt/bidder/BidderApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Bidder/src/main/java/com/njupt/bidder/component/Bidder.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bidder/src/main/java/com/njupt/bidder/component/Bidder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Bidder/src/main/java/com/njupt/bidder/component/PrivateKeyGeneratorConnector.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bidder/src/main/java/com/njupt/bidder/component/PrivateKeyGeneratorConnector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bidder/src/main/java/com/njupt/bidder/configs/PairingConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bidder/src/main/java/com/njupt/bidder/utils/CryptoUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bidder/src/main/java/com/njupt/bidder/configs/RestTemplateConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bidder/src/main/java/com/njupt/bidder/configs/RestTemplateConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fabric-Chaincode/src/main/java/com/njupt/chaincode/MyAssetChaincode.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fabric-Chaincode/src/main/java/com/njupt/chaincode/model/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fabric-Chaincode/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/Fabric-Chaincode/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fabric-Chaincode/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/Fabric-Chaincode/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PrivateKeyGenerator/src/main/java/com/njupt/pkg/dao/PrivateKeyGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/PrivateKeyGenerator/src/main/java/com/njupt/pkg/dao/PrivateKeyGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bidder/src/main/java/com/njupt/bidder/fabric/ChaincodeEventListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bidder/src/main/java/com/njupt/bidder/fabric/ChaincodeEventListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bidder/src/main/java/com/njupt/bidder/fabric/HyperLedgerFabricGatewayConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bidder/src/main/java/com/njupt/bidder/fabric/HyperLedgerFabricGatewayConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bidder/src/main/java/com/njupt/bidder/pojo/FirstRoundInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bidder/src/main/java/com/njupt/bidder/pojo/FirstRoundInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bidder/src/main/java/com/njupt/bidder/pojo/SecondRoundCipher4Someone.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bidder/src/main/java/com/njupt/bidder/pojo/SecondRoundCipher4Someone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bidder/src/main/java/com/njupt/bidder/utils/CryptoUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bidder/src/main/java/com/njupt/bidder/utils/CryptoUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bidder/src/main/java/com/njupt/bidder/utils/SerializeUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bidder/src/main/java/com/njupt/bidder/utils/SerializeUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fabric-Chaincode/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Fabric-Chaincode/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fabric-Chaincode/src/main/java/com/njupt/chaincode/MyAssetChaincode.java.bak" beforeDir="false" afterPath="$PROJECT_DIR$/Fabric-Chaincode/src/main/java/com/njupt/chaincode/MyAssetChaincode.java.bak" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fabric-Chaincode/src/main/java/com/njupt/chaincode/SealedBidAuctionChaincode.java" beforeDir="false" afterPath="$PROJECT_DIR$/Fabric-Chaincode/src/main/java/com/njupt/chaincode/SealedBidAuctionChaincode.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +70,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/indistinguishable/IdeaProjects/Fabric-Based-Sealed-bid-auction&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/indistinguishable/hyperledger-fabric-app-java-demo&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -83,6 +85,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Bidder/src/main/resources/user-config" />
       <recent name="$PROJECT_DIR$/Bidder/src/main/resources" />
       <recent name="$PROJECT_DIR$/Bidder/src/main/java/com/njupt/bidder/fabric" />
     </key>
@@ -99,7 +102,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.BidderApplication">
+  <component name="RunManager" selected="Spring Boot.BidderApplication-org2-peer1">
     <configuration name="FabricInit" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.fabric.FabricInit" />
       <module name="Fabric-SDK" />
@@ -145,38 +148,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BidderApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="Bidder" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.njupt.bidder.BidderApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BidderApplication (2)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="Bidder" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.njupt.bidder.BidderApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BidderApplication (3)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="Bidder" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.njupt.bidder.BidderApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BidderApplication (4)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="Bidder" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.njupt.bidder.BidderApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BidderApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" activateToolWindowBeforeRun="false" nameIsGenerated="true">
+    <configuration name="BidderApplication-org1-peer0" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" activateToolWindowBeforeRun="false">
       <option name="INCLUDE_PROVIDED_SCOPE" value="false" />
       <module name="Bidder" />
-      <option name="PROGRAM_PARAMETERS" value="--identity=bidder1 --filePath=$PROJECT_DIR$/Bidder/src/main/resources/user-config/config-org1-peer0.yml" />
+      <option name="PROGRAM_PARAMETERS" value="--n=4 --identity=bidder1 --filePath=$PROJECT_DIR$/Bidder/src/main/resources/user-config/config-org1-peer0.yml" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.njupt.bidder.BidderApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BidderApplication-org1-peer1" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="Bidder" />
+      <option name="PROGRAM_PARAMETERS" value="--n=4 --identity=bidder2 --filePath=$PROJECT_DIR$/Bidder/src/main/resources/user-config/config-org1-peer1.yml" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.njupt.bidder.BidderApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BidderApplication-org2-peer0" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="Bidder" />
+      <option name="PROGRAM_PARAMETERS" value="--n=4 --identity=bidder3 --filePath=$PROJECT_DIR$/Bidder/src/main/resources/user-config/config-org2-peer0.yml" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.njupt.bidder.BidderApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BidderApplication-org2-peer1" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="Bidder" />
+      <option name="PROGRAM_PARAMETERS" value="--n=4 --identity=bidder4 --filePath=$PROJECT_DIR$/Bidder/src/main/resources/user-config/config-org2-peer1.yml" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.njupt.bidder.BidderApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -208,11 +207,10 @@
       <item itemvalue="JUnit.BidderConfigApplicationTests.contextLoads" />
       <item itemvalue="JUnit.PrivateKeyGeneratorApplicationTests.testPrivateKeyGenerator (1)" />
       <item itemvalue="Spring Boot.FabricCaServerApplication" />
-      <item itemvalue="Spring Boot.BidderApplication" />
-      <item itemvalue="Spring Boot.BidderApplication (1)" />
-      <item itemvalue="Spring Boot.BidderApplication (2)" />
-      <item itemvalue="Spring Boot.BidderApplication (3)" />
-      <item itemvalue="Spring Boot.BidderApplication (4)" />
+      <item itemvalue="Spring Boot.BidderApplication-org1-peer0" />
+      <item itemvalue="Spring Boot.BidderApplication-org1-peer1" />
+      <item itemvalue="Spring Boot.BidderApplication-org2-peer0" />
+      <item itemvalue="Spring Boot.BidderApplication-org2-peer1" />
       <item itemvalue="Spring Boot.PrivateKeyGeneratorApplication" />
     </list>
     <recent_temporary>
@@ -257,7 +255,10 @@
       <workItem from="1682580837810" duration="5742000" />
       <workItem from="1682598593194" duration="4365000" />
       <workItem from="1682651854719" duration="1226000" />
-      <workItem from="1682655362636" duration="3412000" />
+      <workItem from="1682655362636" duration="3681000" />
+      <workItem from="1682678102880" duration="10393000" />
+      <workItem from="1682736277705" duration="18020000" />
+      <workItem from="1682757762260" duration="14660000" />
     </task>
     <servers />
   </component>

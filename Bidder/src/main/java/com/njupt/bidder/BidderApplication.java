@@ -1,22 +1,20 @@
 package com.njupt.bidder;
 
 import com.njupt.bidder.component.Bidder;
-import org.hyperledger.fabric.client.CommitException;
-import org.hyperledger.fabric.client.Contract;
-import org.hyperledger.fabric.client.GatewayException;
+import org.hyperledger.fabric.client.*;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
+import java.io.IOException;
+
+
 
 @SpringBootApplication
 public class BidderApplication {
-    public static void main(String[] args) throws GatewayException, CommitException {
+    public static void main(String[] args) throws IOException, EndorseException, CommitException, SubmitException, CommitStatusException, InterruptedException {
         ApplicationContext applicationContext = SpringApplication.run(BidderApplication.class, args);
-//        System.out.println(new String(contract.submitTransaction("queryAll")));
         Bidder bidder = applicationContext.getBean(Bidder.class);
-        Contract contract = applicationContext.getBean(Contract.class);
-        bidder.getFirstRoundInput();
-
-
+        Thread.sleep(3000);
+        bidder.submitFirstRoundInput();
     }
 }

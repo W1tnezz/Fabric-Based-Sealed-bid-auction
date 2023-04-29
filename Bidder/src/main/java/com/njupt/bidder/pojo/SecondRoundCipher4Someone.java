@@ -8,5 +8,5 @@ import java.util.List;
 @Data
 public class SecondRoundCipher4Someone {
     private String identity;
-    private List<Element[]> ciphers;
+    private List<byte[][]> ciphers;
 }

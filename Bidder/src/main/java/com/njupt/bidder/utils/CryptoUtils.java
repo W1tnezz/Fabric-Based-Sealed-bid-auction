@@ -30,6 +30,23 @@ public class CryptoUtils {
     public static Element newG1ElementFromBytes(byte[] bytes){
         return G1.newElementFromBytes(bytes);
     }
+    public static Element newGTElementFromBytes(byte[] bytes) {
+        return GT.newElementFromBytes(bytes);
+    }
+
+    public static Field<Element> getZr(){
+        return Zr;
+    }
+    public static Field<Element> getG1(){
+        return G1;
+    }
+    public static Field<Element> getGT(){
+        return GT;
+    }
+
+    public static Element getGtGenerator(){
+        return gtGenerator;
+    }
 
     public static Element[] encrypt(int m, Element masterPublicKey, String identity){
         Element r = Zr.newRandomElement().getImmutable();

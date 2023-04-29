@@ -26,6 +26,8 @@ public class MyAssetChaincode implements ContractInterface {
      */
     @Transaction(intent = Transaction.TYPE.SUBMIT)
     public void init(final Context ctx) {
+        addUser(ctx, "2", "fabric", 1.00);
+        addUser(ctx, "001", "xzq", 100.00);
     }
 
     /**

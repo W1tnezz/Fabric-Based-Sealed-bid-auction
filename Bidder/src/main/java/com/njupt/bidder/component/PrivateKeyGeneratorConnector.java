@@ -25,5 +25,4 @@ public class PrivateKeyGeneratorConnector {
         byte[] result = restTemplate.getForObject(pkgUrl + "/{request}/{identity}", byte[].class, request, identity);
         return CryptoUtils.newG1ElementFromBytes(result);
     }
-
 }

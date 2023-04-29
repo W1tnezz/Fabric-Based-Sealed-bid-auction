@@ -1,11 +1,16 @@
 package com.njupt.bidder.fabric;
 
 
+import com.njupt.bidder.component.Bidder;
+import com.njupt.bidder.pojo.FirstRoundInput;
+import com.njupt.bidder.pojo.SecondRoundInput;
+import com.njupt.bidder.utils.SerializeUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.codec.binary.StringUtils;
-import org.hyperledger.fabric.client.ChaincodeEvent;
-import org.hyperledger.fabric.client.CloseableIterator;
-import org.hyperledger.fabric.client.Network;
+import org.hyperledger.fabric.client.*;
+
+import java.io.IOException;
+import java.util.Arrays;
 
 
 /**
@@ -15,24 +20,12 @@ import org.hyperledger.fabric.client.Network;
 
 @Slf4j
 public class ChaincodeEventListener implements Runnable {
-
-
     final Network network;
+    final Bidder bidder;
 
-    public ChaincodeEventListener(Network network) {
+    public ChaincodeEventListener(Network network, Bidder bidder) {
         this.network = network;
-
-//        ScheduledThreadPoolExecutor executor = new ScheduledThreadPoolExecutor(1, new ThreadFactory() {
-//            @Override
-//            public Thread newThread(@NonNull Runnable r) {
-//                Thread thread = new Thread(r);
-//                // thread.setDaemon(true);
-//                thread.setName(this.getClass() + "chaincode_event_listener");
-//                return thread;
-//            }
-//        });
-//        executor.schedule(this, 0, TimeUnit.SECONDS);
-
+        this.bidder = bidder;
         Thread thread = new Thread(this);
         // thread.setDaemon(true);
         thread.setName(this.getClass() + "chaincode_event_listener");
@@ -46,9 +39,28 @@ public class ChaincodeEventListener implements Runnable {
         // events.hasNext() 会阻塞等待
         while (events.hasNext()) {
             ChaincodeEvent event = events.next();
-            log.info("receive chaincode event {} , transaction id {} ,  block number {} , payload {} "
-                    , event.getEventName() , event.getTransactionId() , event.getBlockNumber() , StringUtils.newStringUtf8(event.getPayload()));
+            byte[] payLoad = event.getPayload();
+            if(event.getEventName().equals("newFirstRoundInput")){
+                try {
+                    FirstRoundInput receivedCipher = SerializeUtils.Bytes2FirstRoundInput(payLoad);
+                    if(!receivedCipher.getIdentity().equals(bidder.getIdentity())){
+                        bidder.appendOthersFirstRoundInput(receivedCipher);
+                    }
+                } catch (Exception e) {
+                    throw new RuntimeException(e);
+                }
+            }
 
+            if(event.getEventName().equals("newSecondRoundInput")){
+                try {
+                    SecondRoundInput receivedCipher = SerializeUtils.Bytes2SecondRoundInput(payLoad);
+                    if(!receivedCipher.getIdentity().equals(bidder.getIdentity())){
+                        bidder.appendOthersSecondRoundInput(receivedCipher);
+                    }
+                } catch (Exception e) {
+                    throw new RuntimeException(e);
+                }
+            }
         }
     }
 }

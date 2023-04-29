@@ -1,5 +1,6 @@
 package com.njupt.bidder.fabric;
 
+import com.njupt.bidder.component.Bidder;
 import com.njupt.bidder.utils.YmlUtils;
 import io.grpc.ManagedChannel;
 import io.grpc.netty.shaded.io.grpc.netty.GrpcSslContexts;
@@ -66,22 +67,29 @@ public class HyperLedgerFabricGatewayConfig {
     private ManagedChannel newGrpcConnection() throws IOException, CertificateException {
         Reader tlsCertReader = Files.newBufferedReader(Paths.get(hyperLedgerFabricProperties.getTlsCertPath()));
         X509Certificate tlsCert = Identities.readX509Certificate(tlsCertReader);
+        if(hyperLedgerFabricProperties.getMspId().equals("Org1MSP")){
+            return NettyChannelBuilder.forTarget("peer0.org1.example.com:7051")
+                    .sslContext(GrpcSslContexts.forClient().trustManager(tlsCert).build())
+                    .overrideAuthority("peer0.org1.example.com")
+                    .build();
+        }else {
+            return NettyChannelBuilder.forTarget("peer0.org2.example.com:8051")
+                    .sslContext(GrpcSslContexts.forClient().trustManager(tlsCert).build())
+                    .overrideAuthority("peer0.org2.example.com")
+                    .build();
+        }
 
-        return NettyChannelBuilder.forTarget("peer0.org1.example.com:7051")
-                .sslContext(GrpcSslContexts.forClient().trustManager(tlsCert).build())
-                .overrideAuthority("peer0.org1.example.com")
-                .build();
     }
     @Bean
     public Network network(Gateway gateway) {
         return gateway.getNetwork(hyperLedgerFabricProperties.getChannel());
     }
     @Bean
-    public Contract catContract(Network network) {
+    public Contract bidContract(Network network) {
         return network.getContract("mycc");
     }
     @Bean
-    public ChaincodeEventListener chaincodeEventListener(Network network) {
-        return new ChaincodeEventListener(network);
+    public ChaincodeEventListener chaincodeEventListener(Network network, Bidder bidder) {
+        return new ChaincodeEventListener(network, bidder);
     }
 }
