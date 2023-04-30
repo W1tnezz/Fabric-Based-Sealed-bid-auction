@@ -1,22 +1,13 @@
 package com.njupt.bidder.fabric;
 
-
 import com.njupt.bidder.component.Bidder;
 import com.njupt.bidder.pojo.FirstRoundInput;
 import com.njupt.bidder.pojo.SecondRoundInput;
+import com.njupt.bidder.pojo.ThirdRoundInput;
 import com.njupt.bidder.utils.SerializeUtils;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.commons.codec.binary.StringUtils;
 import org.hyperledger.fabric.client.*;
 
-import java.io.IOException;
-import java.util.Arrays;
-
-
-/**
- * @author xu zheqing
- * @date 2023/4/27
- */
 
 @Slf4j
 public class ChaincodeEventListener implements Runnable {
@@ -35,7 +26,7 @@ public class ChaincodeEventListener implements Runnable {
     @Override
     public void run() {
         CloseableIterator<ChaincodeEvent> events = network.getChaincodeEvents("mycc");
-        log.info("chaincodeEvents {} " , events);
+        log.info("启动链码事件监听器： {} " , events);
         // events.hasNext() 会阻塞等待
         while (events.hasNext()) {
             ChaincodeEvent event = events.next();
@@ -56,6 +47,17 @@ public class ChaincodeEventListener implements Runnable {
                     SecondRoundInput receivedCipher = SerializeUtils.Bytes2SecondRoundInput(payLoad);
                     if(!receivedCipher.getIdentity().equals(bidder.getIdentity())){
                         bidder.appendOthersSecondRoundInput(receivedCipher);
+                    }
+                } catch (Exception e) {
+                    throw new RuntimeException(e);
+                }
+            }
+
+            if(event.getEventName().equals("newThirdRoundInput")){
+                try {
+                    ThirdRoundInput receivedCipher = SerializeUtils.Bytes2ThirdRoundInput(payLoad);
+                    if(!receivedCipher.getIdentity().equals(bidder.getIdentity())){
+                        bidder.appendOthersThirdRoundInput(receivedCipher);
                     }
                 } catch (Exception e) {
                     throw new RuntimeException(e);

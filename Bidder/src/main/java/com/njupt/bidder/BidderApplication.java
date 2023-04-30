@@ -14,7 +14,7 @@ public class BidderApplication {
     public static void main(String[] args) throws IOException, EndorseException, CommitException, SubmitException, CommitStatusException, InterruptedException {
         ApplicationContext applicationContext = SpringApplication.run(BidderApplication.class, args);
         Bidder bidder = applicationContext.getBean(Bidder.class);
-        Thread.sleep(3000);
-        bidder.submitFirstRoundInput();
+        Thread.sleep(5000);
+        bidder.startAuction();
     }
 }

@@ -30,10 +30,6 @@ import java.security.cert.CertificateException;
 import java.security.cert.X509Certificate;
 import java.util.concurrent.TimeUnit;
 
-/**
- * @author xu zheqing
- * @date 2023/4/21
- */
 @Configuration
 @AllArgsConstructor
 @Slf4j

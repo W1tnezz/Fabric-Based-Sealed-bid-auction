@@ -5,6 +5,7 @@ import com.esotericsoftware.kryo.Kryo;
 import com.esotericsoftware.kryo.io.Input;
 import com.esotericsoftware.kryo.io.Output;
 import com.njupt.bidder.pojo.SecondRoundInput;
+import com.njupt.bidder.pojo.ThirdRoundInput;
 
 import java.io.*;
 
@@ -59,4 +60,24 @@ public class SerializeUtils {
         }
     }
 
+    public static byte[] thirdRoundInput2Bytes(ThirdRoundInput thirdRoundInput, int size) throws IOException {
+        try (ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
+             Output output = new Output(byteArrayOutputStream, 10240 * size)) {
+            kryo.writeObject(output, thirdRoundInput);
+            return output.toBytes();
+        }catch (Exception e){
+            e.printStackTrace();
+            throw new IOException("序列化失败");
+        }
+    }
+
+    public static ThirdRoundInput Bytes2ThirdRoundInput(byte[] bytes) throws IOException {
+        try (ByteArrayInputStream byteArrayInputStream = new ByteArrayInputStream(bytes);
+             Input input = new Input(byteArrayInputStream)) {
+            return kryo.readObject(input, ThirdRoundInput.class);
+        } catch (Exception e) {
+            e.printStackTrace();
+            throw new IOException("反序列化失败");
+        }
+    }
 }

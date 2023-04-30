@@ -5,6 +5,9 @@ import org.yaml.snakeyaml.Yaml;
 import org.yaml.snakeyaml.constructor.Constructor;
 import java.io.*;
 
+/**
+ * 读取yml配置文件
+ * */
 public class YmlUtils {
     public static <T> T toObject(String ymlPath, Class<T> clazz) throws FileNotFoundException {
         File file = ResourceUtils.getFile(ymlPath);
