@@ -237,7 +237,6 @@ public class Bidder {
             for (int i = 0; i < compareRes.getCiphers().size(); i++) {
                 byte[][] cipher = compareRes.getCiphers().get(i);
                 Element blinder = CryptoUtils.getZr().newRandomElement();
-
                 Element c1 = CryptoUtils.newG1ElementFromBytes(cipher[0]);
                 Element c2 = CryptoUtils.newGTElementFromBytes(cipher[1]);
                 c1 = c1.mulZn(blinder);
@@ -280,7 +279,7 @@ public class Bidder {
                 }
             }
             if(count == zeroNum){
-                logger.info("验证通过！");
+                logger.info("密文解密后有" + count + "组密文可以解密出0，验证通过！");
             }else {
                 logger.error("验证未通过！");
             }

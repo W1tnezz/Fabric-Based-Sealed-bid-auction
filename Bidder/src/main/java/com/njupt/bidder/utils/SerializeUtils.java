@@ -62,7 +62,7 @@ public class SerializeUtils {
 
     public static byte[] thirdRoundInput2Bytes(ThirdRoundInput thirdRoundInput, int size) throws IOException {
         try (ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
-             Output output = new Output(byteArrayOutputStream, 10240 * size)) {
+             Output output = new Output(byteArrayOutputStream, 15360 * size)) {
             kryo.writeObject(output, thirdRoundInput);
             return output.toBytes();
         }catch (Exception e){

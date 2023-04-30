@@ -5,17 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75829383-fb15-45bb-a7b0-951694b20433" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bidder/src/main/java/com/njupt/bidder/BidderApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bidder/src/main/java/com/njupt/bidder/BidderApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Bidder/src/main/java/com/njupt/bidder/component/Bidder.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bidder/src/main/java/com/njupt/bidder/component/Bidder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bidder/src/main/java/com/njupt/bidder/fabric/ChaincodeEventListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bidder/src/main/java/com/njupt/bidder/fabric/ChaincodeEventListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bidder/src/main/java/com/njupt/bidder/fabric/HyperLedgerFabricGatewayConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bidder/src/main/java/com/njupt/bidder/fabric/HyperLedgerFabricGatewayConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bidder/src/main/java/com/njupt/bidder/fabric/HyperLedgerFabricProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bidder/src/main/java/com/njupt/bidder/fabric/HyperLedgerFabricProperties.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bidder/src/main/java/com/njupt/bidder/pojo/ThirdRoundCompareRes.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bidder/src/main/java/com/njupt/bidder/pojo/ThirdRoundCompareRes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bidder/src/main/java/com/njupt/bidder/pojo/ThirdRoundInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bidder/src/main/java/com/njupt/bidder/pojo/ThirdRoundInput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bidder/src/main/java/com/njupt/bidder/utils/CryptoUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bidder/src/main/java/com/njupt/bidder/utils/CryptoUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Bidder/src/main/java/com/njupt/bidder/utils/SerializeUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bidder/src/main/java/com/njupt/bidder/utils/SerializeUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bidder/src/main/java/com/njupt/bidder/utils/YmlUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bidder/src/main/java/com/njupt/bidder/utils/YmlUtils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -256,7 +247,7 @@
       <workItem from="1682678102880" duration="10393000" />
       <workItem from="1682736277705" duration="18020000" />
       <workItem from="1682757762260" duration="15406000" />
-      <workItem from="1682827090954" duration="8849000" />
+      <workItem from="1682827090954" duration="9500000" />
     </task>
     <servers />
   </component>
