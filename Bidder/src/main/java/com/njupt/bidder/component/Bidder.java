@@ -69,7 +69,8 @@ public class Bidder {
      */
     public void submitFirstRoundInput() throws IOException, EndorseException, CommitException, SubmitException, CommitStatusException {
         logger.info(identity + "开始计算自己的第一轮输入并提交到Fabric上");
-        byte[] input = SerializeUtils.firstRoundInput2Bytes(this.getFirstRoundInput());
+        byte[] input = SerializeUtils.firstRoundInput2Bytes(this.calFirstRoundInput());
+        logger.info("第一轮输入对象序列化后长度为:" + input.length + "byte");
         String inputStr = new String(input, StandardCharsets.ISO_8859_1);
         contract.newProposal("submitFirstRoundInput")
                 .addArguments(this.identity, inputStr)
@@ -81,14 +82,17 @@ public class Bidder {
     /**
      * 根据自己的出价，分别加密每一个二进制位，并由一个Java对象保存；
      * */
-    public FirstRoundInput getFirstRoundInput() {
+    public FirstRoundInput calFirstRoundInput() {
         List<byte[][]> input = new ArrayList<>();
         String bidStr = this.bidBinaryStr;
         logger.info(this.identity + "的出价二进制格式为：" + bidStr);
+        long start = System.currentTimeMillis();
         for (int i = 0; i < bidStr.length(); i++) {
             Element[] cipher = CryptoUtils.encrypt(bidStr.charAt(i) - '0', this.masterPublicKey, identity);
             input.add(new byte[][]{cipher[0].toBytes(), cipher[1].toBytes()});
         }
+        long end = System.currentTimeMillis();
+        logger.info("第一轮计算耗时:" + (end - start) + "ms");
         return new FirstRoundInput(this.identity, input);
     }
 
@@ -104,6 +108,7 @@ public class Bidder {
     public void submitSecondRoundInput() throws IOException, EndorseException, CommitException, SubmitException, CommitStatusException {
         logger.info(identity + "开始计算自己的第二轮输入并提交到Fabric上");
         byte[] input = SerializeUtils.secondRoundInput2Bytes(calSecondRoundInput(), this.BIDDER_NUM - 1);
+        logger.info(BIDDER_NUM + "个拍卖者时，" + "第二轮输入对象序列化后长度为:" + input.length + "byte");
         String inputStr = new String(input, StandardCharsets.ISO_8859_1);
         contract.newProposal("submitSecondRoundInput")
                 .addArguments(this.identity, inputStr)
@@ -116,6 +121,7 @@ public class Bidder {
         SecondRoundInput secondRoundInput = new SecondRoundInput();
         secondRoundInput.setIdentity(this.identity);
         secondRoundInput.setCiphers(new ArrayList<>());
+        long start = System.currentTimeMillis();
         for (FirstRoundInput firstRoundInput : this.othersFirstRoundInput) {
             logger.info("计算与" + firstRoundInput.getIdentity() + "的DGK比较密文...");
             List<byte[][]> ciphersByte = firstRoundInput.getCiphers();
@@ -165,6 +171,8 @@ public class Bidder {
             temp.setCiphers(ciphersDGK);
             secondRoundInput.getCiphers().add(temp);
         }
+        long end = System.currentTimeMillis();
+        logger.info(BIDDER_NUM + "个拍卖者时，" + "第二轮计算耗时:" + (end - start) + "ms");
         return secondRoundInput;
     }
 
@@ -179,6 +187,7 @@ public class Bidder {
 
     public void calRank() {
         int count = 0;
+        long start = System.currentTimeMillis();
         for (SecondRoundInput secondRoundInput : othersSecondRoundInput) {
             for (SecondRoundCipher4Someone cipher : secondRoundInput.getCiphers()) {
                 if (cipher.getIdentity().equals(this.identity)) {
@@ -204,14 +213,17 @@ public class Bidder {
                 }
             }
         }
+        long end = System.currentTimeMillis();
         logger.info(identity + "在收到的第二轮消息中解密和自己相关的比较密文，其中有" + count + "组密文可以解密出0！");
         this.RANK = BIDDER_NUM - count;;
         logger.info(identity + "判断得知自己出价的排名为第" + RANK + "位！");
+        logger.info(BIDDER_NUM + "个拍卖者时，" + identity + "计算自己的排名耗时:" + (end - start) + "ms");
     }
 
     public void submitThirdRoundInput() throws IOException, EndorseException, CommitException, SubmitException, CommitStatusException {
         logger.info(identity + "开始计算自己的第三轮输入并提交到Fabric上");
         byte[] input = SerializeUtils.thirdRoundInput2Bytes(calThirdRoundInput(), this.BIDDER_NUM - 1);
+        logger.info(BIDDER_NUM + "个拍卖者时，" + "第三轮输入对象序列化后长度为:" + input.length + "byte");
         String inputStr = new String(input, StandardCharsets.ISO_8859_1);
         contract.newProposal("submitThirdRoundInput")
                 .addArguments(this.identity, inputStr)
@@ -232,6 +244,7 @@ public class Bidder {
         res.setIdentity(identity);
         res.setRank(this.RANK);
         res.setAllProofs(new ArrayList<>());
+        long start = System.currentTimeMillis();
         for (ThirdRoundCompareRes compareRes : this.thirdRoundCompareRes) {
             Collections.shuffle(compareRes.getCiphers());
             for (int i = 0; i < compareRes.getCiphers().size(); i++) {
@@ -248,6 +261,8 @@ public class Bidder {
             }
             res.getAllProofs().add(compareRes);
         }
+        long end = System.currentTimeMillis();
+        logger.info(BIDDER_NUM + "个拍卖者时，" + "第三轮计算耗时:" + (end - start) + "ms");
         return res;
     }
 
@@ -267,22 +282,26 @@ public class Bidder {
             int zeroNum = this.BIDDER_NUM - thirdRoundInput.getRank();
             List<ThirdRoundCompareRes> allProofs = thirdRoundInput.getAllProofs();
             int count = 0;
+            long start = System.currentTimeMillis();
             for (ThirdRoundCompareRes proof : allProofs) {
                 for (int i = 0; i < proof.getCiphers().size(); i++) {
                     byte[][] cipherBytes = proof.getCiphers().get(i);
                     byte[] tokenBytes = proof.getTokens().get(i);
                     Element c2 = CryptoUtils.newGTElementFromBytes(cipherBytes[1]);
                     Element token = CryptoUtils.newGTElementFromBytes(tokenBytes);
-                    if(c2.mul(token.invert()).isEqual(CryptoUtils.getGT().newOneElement())){
+                    if(c2.mul(token.invert()).isEqual(CryptoUtils.getGT().newZeroElement())){
                         count++;
+                        break;
                     }
                 }
             }
+            long end = System.currentTimeMillis();
             if(count == zeroNum){
                 logger.info("密文解密后有" + count + "组密文可以解密出0，验证通过！");
             }else {
                 logger.error("验证未通过！");
             }
+            logger.info("验证" + thirdRoundInput.getIdentity() + "的排名耗时:" + (end - start) + "ms");
         }
     }
 }

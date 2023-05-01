@@ -7,12 +7,15 @@ import com.njupt.bidder.pojo.ThirdRoundInput;
 import com.njupt.bidder.utils.SerializeUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.hyperledger.fabric.client.*;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 
 @Slf4j
 public class ChaincodeEventListener implements Runnable {
     final Network network;
     final Bidder bidder;
+    private final Logger logger = LoggerFactory.getLogger(getClass());
 
     public ChaincodeEventListener(Network network, Bidder bidder) {
         this.network = network;
@@ -36,6 +39,8 @@ public class ChaincodeEventListener implements Runnable {
                     FirstRoundInput receivedCipher = SerializeUtils.Bytes2FirstRoundInput(payLoad);
                     if(!receivedCipher.getIdentity().equals(bidder.getIdentity())){
                         bidder.appendOthersFirstRoundInput(receivedCipher);
+                    }else {
+                        logger.info("在链上收到自己第一轮的链码调用事件通知.");
                     }
                 } catch (Exception e) {
                     throw new RuntimeException(e);
