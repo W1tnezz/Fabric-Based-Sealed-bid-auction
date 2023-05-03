@@ -6,11 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="75829383-fb15-45bb-a7b0-951694b20433" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bidder/src/main/java/com/njupt/bidder/component/Bidder.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bidder/src/main/java/com/njupt/bidder/component/Bidder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bidder/src/main/java/com/njupt/bidder/fabric/ChaincodeEventListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bidder/src/main/java/com/njupt/bidder/fabric/ChaincodeEventListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bidder/src/main/java/com/njupt/bidder/utils/SerializeUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bidder/src/main/java/com/njupt/bidder/utils/SerializeUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fabric-Chaincode/src/main/java/com/njupt/chaincode/MyAssetChaincode.java.bak" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fabric-Chaincode/src/main/java/com/njupt/chaincode/model/User.java.bak" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +89,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.BidderApplication-org2-peer1">
+  <component name="RunManager" selected="Spring Boot.BidderApplication-org1-peer0">
     <configuration name="FabricInit" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.fabric.FabricInit" />
       <module name="Fabric-SDK" />
@@ -253,7 +248,8 @@
       <workItem from="1682757762260" duration="15406000" />
       <workItem from="1682827090954" duration="9897000" />
       <workItem from="1682926332882" duration="612000" />
-      <workItem from="1682943301003" duration="4778000" />
+      <workItem from="1682943301003" duration="4981000" />
+      <workItem from="1682949219203" duration="73000" />
     </task>
     <servers />
   </component>
