@@ -261,6 +261,7 @@ public class Bidder {
             }
             res.getAllProofs().add(compareRes);
         }
+        Collections.shuffle(res.getAllProofs());
         long end = System.currentTimeMillis();
         logger.info(BIDDER_NUM + "个拍卖者时，" + "第三轮计算耗时:" + (end - start) + "ms");
         return res;

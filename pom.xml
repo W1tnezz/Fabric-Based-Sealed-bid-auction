@@ -13,6 +13,7 @@
         <module>Fabric-CA-Server</module>
         <module>Fabric-Chaincode</module>
         <module>PrivateKeyGenerator</module>
+        <module>Benchmark</module>
     </modules>
 
     <properties>

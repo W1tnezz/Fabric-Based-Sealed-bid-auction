@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="75829383-fb15-45bb-a7b0-951694b20433" name="Changes" comment="" />
+    <list default="true" id="75829383-fb15-45bb-a7b0-951694b20433" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Benchmark/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bidder/src/main/java/com/njupt/bidder/component/Bidder.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bidder/src/main/java/com/njupt/bidder/component/Bidder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bidder/src/main/java/com/njupt/bidder/pojo/ThirdRoundCompareRes.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bidder/src/main/java/com/njupt/bidder/pojo/ThirdRoundCompareRes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fabric-Chaincode/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Fabric-Chaincode/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fabric-network/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/fabric-network/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,31 +55,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/indistinguishable/hyperledger-fabric-app-java-demo&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.14453125&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2719919&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;57871191bd7f93cd980b7b2cf4dcb41a&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "17",
+    "last_opened_file_path": "/home/indistinguishable/IdeaProjects/Fabric-Based-Sealed-bid-auction/Benchmark/src/main/resources",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.14453125",
+    "project.structure.side.proportion": "0.2719919",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "spring.configuration.checksum": "57871191bd7f93cd980b7b2cf4dcb41a",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Benchmark/src/main/resources" />
       <recent name="$PROJECT_DIR$/Bidder/src/main/resources/user-config" />
       <recent name="$PROJECT_DIR$/Bidder/src/main/resources" />
       <recent name="$PROJECT_DIR$/Bidder/src/main/java/com/njupt/bidder/fabric" />
@@ -79,6 +90,9 @@
       <recent name="$PROJECT_DIR$/PrivateKeyGenerator" />
       <recent name="$PROJECT_DIR$/PrivateKeyGenerator/src/main/resources" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="crypto" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="configurationTypes">
@@ -87,7 +101,14 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.BidderApplication-org1-peer0">
+  <component name="RunManager" selected="Application.Benchmark">
+    <configuration name="Benchmark" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Benchmark" />
+      <module name="Benchmark" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="FabricInit" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.fabric.FabricInit" />
       <module name="Fabric-SDK" />
@@ -188,6 +209,7 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.Benchmark" />
       <item itemvalue="Application.FabricInit" />
       <item itemvalue="JUnit.BidderConfigApplicationTests.contextLoads" />
       <item itemvalue="JUnit.PrivateKeyGeneratorApplicationTests.testPrivateKeyGenerator (1)" />
@@ -200,6 +222,7 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Benchmark" />
         <item itemvalue="Spring Boot.PrivateKeyGeneratorApplication" />
         <item itemvalue="JUnit.BidderConfigApplicationTests.contextLoads" />
         <item itemvalue="JUnit.PrivateKeyGeneratorApplicationTests.testPrivateKeyGenerator (1)" />
@@ -248,7 +271,8 @@
       <workItem from="1682926332882" duration="612000" />
       <workItem from="1682943301003" duration="4981000" />
       <workItem from="1682949219203" duration="73000" />
-      <workItem from="1683112018769" duration="324000" />
+      <workItem from="1683112018769" duration="1315000" />
+      <workItem from="1683610400769" duration="7665000" />
     </task>
     <servers />
   </component>

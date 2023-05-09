@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Fabric-Chaincode" />
+        <module name="Benchmark" />
         <module name="Bidder" />
         <module name="Fabric-CA-Server" />
         <module name="PrivateKeyGenerator" />

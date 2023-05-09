@@ -1,4 +1,4 @@
-package main
+package Benchmark
 
 import (
 	sdkInit "fabric-network/sdkInit"
@@ -11,7 +11,7 @@ var App sdkInit.Application
 const cc_name string = "mycc"
 const cc_version string = "1.0.0"
 
-func main() {
+func Benchmark() {
 	fmt.Println("go")
 	orgs := []*sdkInit.OrgInfo{
 		{
