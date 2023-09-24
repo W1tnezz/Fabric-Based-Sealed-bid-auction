@@ -21,8 +21,10 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Benchmark" options="-parameters" />
       <module name="Bidder" options="-parameters" />
       <module name="Fabric-CA-Server" options="-parameters" />
+      <module name="Fabric-Chaincode" options="-parameters" />
       <module name="Fabric-Gateway-SDK1" options="-parameters" />
       <module name="PrivateKeyGenerator" options="-parameters" />
     </option>
