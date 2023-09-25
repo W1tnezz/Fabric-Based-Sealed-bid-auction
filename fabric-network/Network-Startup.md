@@ -1,5 +1,7 @@
 # Fabric-Test-Network-Startup
 
+手动启动Fabric流程，参考自https://www.bilibili.com/video/BV1SR4y1X7uB/?spm_id_from=333.788&vd_source=045d76213134eb86118d2f7ffdde4a4b
+
 ### 配置文件：
 
 ##### 生成crypto-config.yaml文件

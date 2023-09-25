@@ -13,7 +13,7 @@ networks:
 services:
   orderer.example.com:
     container_name: orderer.example.com
-    image: hyperledger/fabric-orderer:latest
+    image: hyperledger/fabric-orderer:2.4.6
     environment:
       - FABRIC_LOGGING_SPEC=INFO
       - ORDERER_GENERAL_LISTENADDRESS=0.0.0.0
@@ -44,7 +44,7 @@ services:
   
   peer0.org1.example.com:
     container_name: peer0.org1.example.com
-    image: hyperledger/fabric-peer:latest
+    image: hyperledger/fabric-peer:2.4.6
     environment:
       - CORE_VM_ENDPOINT=unix:///host/var/run/docker.sock
       - CORE_PEER_ID=peer0.org1.example.com
@@ -80,7 +80,7 @@ services:
       
   peer1.org1.example.com:
     container_name: peer1.org1.example.com
-    image: hyperledger/fabric-peer:latest
+    image: hyperledger/fabric-peer:2.4.6
     environment:
       - CORE_VM_ENDPOINT=unix:///host/var/run/docker.sock
       - CORE_PEER_ID=peer1.org1.example.com
@@ -116,7 +116,7 @@ services:
       
   peer0.org2.example.com:
     container_name: peer0.org2.example.com
-    image: hyperledger/fabric-peer:latest
+    image: hyperledger/fabric-peer:2.4.6
     environment:
       - CORE_VM_ENDPOINT=unix:///host/var/run/docker.sock
       - CORE_PEER_ID=peer0.org2.example.com
@@ -152,7 +152,7 @@ services:
       
   peer1.org2.example.com:
     container_name: peer1.org2.example.com
-    image: hyperledger/fabric-peer:latest
+    image: hyperledger/fabric-peer:2.4.6
     environment:
       - CORE_VM_ENDPOINT=unix:///host/var/run/docker.sock
       - CORE_PEER_ID=peer1.org2.example.com
@@ -188,7 +188,7 @@ services:
   
   cli1:
     container_name: cli1
-    image: hyperledger/fabric-tools:latest
+    image: hyperledger/fabric-tools:2.4.6
     tty: true
     stdin_open: true
     environment:
@@ -222,7 +222,7 @@ services:
   
   cli2:
     container_name: cli2
-    image: hyperledger/fabric-tools:latest
+    image: hyperledger/fabric-tools:2.4.6
     tty: true
     stdin_open: true
     environment:
@@ -256,7 +256,7 @@ services:
   
   cli3:
     container_name: cli3
-    image: hyperledger/fabric-tools:latest
+    image: hyperledger/fabric-tools:2.4.6
     tty: true
     stdin_open: true
     environment:
@@ -290,7 +290,7 @@ services:
       
   cli4:
     container_name: cli4
-    image: hyperledger/fabric-tools:latest
+    image: hyperledger/fabric-tools:2.4.6
     tty: true
     stdin_open: true
     environment:

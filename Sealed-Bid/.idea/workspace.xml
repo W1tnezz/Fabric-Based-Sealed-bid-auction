@@ -5,172 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75829383-fb15-45bb-a7b0-951694b20433" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/maven_wrapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Benchmark/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Benchmark/src/main/java/Benchmark.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Benchmark/src/main/java/crypto/CryptoUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Benchmark/src/main/resources/curve_a.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Benchmark/target/classes/curve_a.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/java/com/njupt/bidder/BidderApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/java/com/njupt/bidder/component/Bidder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/java/com/njupt/bidder/component/PrivateKeyGeneratorConnector.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/java/com/njupt/bidder/configs/RestTemplateConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/java/com/njupt/bidder/fabric/ChaincodeEventListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/java/com/njupt/bidder/fabric/HyperLedgerFabricGatewayConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/java/com/njupt/bidder/fabric/HyperLedgerFabricProperties.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/java/com/njupt/bidder/pojo/FirstRoundInput.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/java/com/njupt/bidder/pojo/SecondRoundCipher4Someone.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/java/com/njupt/bidder/pojo/SecondRoundInput.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/java/com/njupt/bidder/pojo/ThirdRoundCompareRes.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/java/com/njupt/bidder/pojo/ThirdRoundInput.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/java/com/njupt/bidder/utils/CryptoUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/java/com/njupt/bidder/utils/SerializeUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/java/com/njupt/bidder/utils/YmlUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/resources/crypto-config/ordererOrganizations/example.com/ca/ca.example.com-cert.pem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/resources/crypto-config/ordererOrganizations/example.com/ca/priv_sk" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/resources/crypto-config/ordererOrganizations/example.com/msp/cacerts/ca.example.com-cert.pem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/resources/crypto-config/ordererOrganizations/example.com/msp/config.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/resources/crypto-config/ordererOrganizations/example.com/msp/tlscacerts/tlsca.example.com-cert.pem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/resources/crypto-config/ordererOrganizations/example.com/orderers/orderer.example.com/msp/cacerts/ca.example.com-cert.pem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/resources/crypto-config/ordererOrganizations/example.com/orderers/orderer.example.com/msp/config.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/resources/crypto-config/ordererOrganizations/example.com/orderers/orderer.example.com/msp/keystore/priv_sk" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/resources/crypto-config/ordererOrganizations/example.com/orderers/orderer.example.com/msp/signcerts/orderer.example.com-cert.pem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/resources/crypto-config/ordererOrganizations/example.com/orderers/orderer.example.com/msp/tlscacerts/tlsca.example.com-cert.pem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/resources/crypto-config/ordererOrganizations/example.com/orderers/orderer.example.com/tls/ca.crt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/resources/crypto-config/ordererOrganizations/example.com/orderers/orderer.example.com/tls/server.crt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/resources/crypto-config/ordererOrganizations/example.com/orderers/orderer.example.com/tls/server.key" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/resources/crypto-config/ordererOrganizations/example.com/tlsca/priv_sk" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/resources/crypto-config/ordererOrganizations/example.com/tlsca/tlsca.example.com-cert.pem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/resources/crypto-config/ordererOrganizations/example.com/users/Admin@example.com/msp/cacerts/ca.example.com-cert.pem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/resources/crypto-config/ordererOrganizations/example.com/users/Admin@example.com/msp/config.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/resources/crypto-config/ordererOrganizations/example.com/users/Admin@example.com/msp/keystore/priv_sk" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/resources/crypto-config/ordererOrganizations/example.com/users/Admin@example.com/msp/signcerts/Admin@example.com-cert.pem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/resources/crypto-config/ordererOrganizations/example.com/users/Admin@example.com/msp/tlscacerts/tlsca.example.com-cert.pem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/resources/crypto-config/ordererOrganizations/example.com/users/Admin@example.com/tls/ca.crt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/resources/crypto-config/ordererOrganizations/example.com/users/Admin@example.com/tls/client.crt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/resources/crypto-config/ordererOrganizations/example.com/users/Admin@example.com/tls/client.key" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/resources/crypto-config/peerOrganizations/org1.example.com/ca/ca.org1.example.com-cert.pem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/resources/crypto-config/peerOrganizations/org1.example.com/ca/priv_sk" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/resources/crypto-config/peerOrganizations/org1.example.com/msp/cacerts/ca.org1.example.com-cert.pem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/resources/crypto-config/peerOrganizations/org1.example.com/msp/config.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/resources/crypto-config/peerOrganizations/org1.example.com/msp/tlscacerts/tlsca.org1.example.com-cert.pem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/resources/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/msp/cacerts/ca.org1.example.com-cert.pem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/resources/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/msp/config.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/resources/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/msp/keystore/priv_sk" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/resources/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/msp/signcerts/peer0.org1.example.com-cert.pem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/resources/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/msp/tlscacerts/tlsca.org1.example.com-cert.pem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/resources/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/ca.crt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/resources/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/server.crt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/resources/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/server.key" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/resources/crypto-config/peerOrganizations/org1.example.com/peers/peer1.org1.example.com/msp/cacerts/ca.org1.example.com-cert.pem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/resources/crypto-config/peerOrganizations/org1.example.com/peers/peer1.org1.example.com/msp/config.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/resources/crypto-config/peerOrganizations/org1.example.com/peers/peer1.org1.example.com/msp/keystore/priv_sk" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/resources/crypto-config/peerOrganizations/org1.example.com/peers/peer1.org1.example.com/msp/signcerts/peer1.org1.example.com-cert.pem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/resources/crypto-config/peerOrganizations/org1.example.com/peers/peer1.org1.example.com/msp/tlscacerts/tlsca.org1.example.com-cert.pem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/resources/crypto-config/peerOrganizations/org1.example.com/peers/peer1.org1.example.com/tls/ca.crt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/resources/crypto-config/peerOrganizations/org1.example.com/peers/peer1.org1.example.com/tls/server.crt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/resources/crypto-config/peerOrganizations/org1.example.com/peers/peer1.org1.example.com/tls/server.key" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/resources/crypto-config/peerOrganizations/org1.example.com/tlsca/priv_sk" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/resources/crypto-config/peerOrganizations/org1.example.com/tlsca/tlsca.org1.example.com-cert.pem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/resources/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/cacerts/ca.org1.example.com-cert.pem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/resources/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/config.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/resources/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/priv_sk" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/resources/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/resources/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/tlscacerts/tlsca.org1.example.com-cert.pem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/resources/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/tls/ca.crt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/resources/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/tls/client.crt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/resources/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/tls/client.key" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/resources/crypto-config/peerOrganizations/org1.example.com/users/User1@org1.example.com/msp/cacerts/ca.org1.example.com-cert.pem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/resources/crypto-config/peerOrganizations/org1.example.com/users/User1@org1.example.com/msp/config.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/resources/crypto-config/peerOrganizations/org1.example.com/users/User1@org1.example.com/msp/keystore/priv_sk" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/resources/crypto-config/peerOrganizations/org1.example.com/users/User1@org1.example.com/msp/signcerts/User1@org1.example.com-cert.pem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/resources/crypto-config/peerOrganizations/org1.example.com/users/User1@org1.example.com/msp/tlscacerts/tlsca.org1.example.com-cert.pem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/resources/crypto-config/peerOrganizations/org1.example.com/users/User1@org1.example.com/tls/ca.crt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/resources/crypto-config/peerOrganizations/org1.example.com/users/User1@org1.example.com/tls/client.crt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/resources/crypto-config/peerOrganizations/org1.example.com/users/User1@org1.example.com/tls/client.key" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/resources/crypto-config/peerOrganizations/org2.example.com/ca/ca.org2.example.com-cert.pem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/resources/crypto-config/peerOrganizations/org2.example.com/ca/priv_sk" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/resources/crypto-config/peerOrganizations/org2.example.com/msp/cacerts/ca.org2.example.com-cert.pem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/resources/crypto-config/peerOrganizations/org2.example.com/msp/config.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/resources/crypto-config/peerOrganizations/org2.example.com/msp/tlscacerts/tlsca.org2.example.com-cert.pem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/resources/crypto-config/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/msp/cacerts/ca.org2.example.com-cert.pem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/resources/crypto-config/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/msp/config.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/resources/crypto-config/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/msp/keystore/priv_sk" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/resources/crypto-config/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/msp/signcerts/peer0.org2.example.com-cert.pem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/resources/crypto-config/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/msp/tlscacerts/tlsca.org2.example.com-cert.pem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/resources/crypto-config/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/tls/ca.crt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/resources/crypto-config/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/tls/server.crt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/resources/crypto-config/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/tls/server.key" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/resources/crypto-config/peerOrganizations/org2.example.com/peers/peer1.org2.example.com/msp/cacerts/ca.org2.example.com-cert.pem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/resources/crypto-config/peerOrganizations/org2.example.com/peers/peer1.org2.example.com/msp/config.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/resources/crypto-config/peerOrganizations/org2.example.com/peers/peer1.org2.example.com/msp/keystore/priv_sk" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/resources/crypto-config/peerOrganizations/org2.example.com/peers/peer1.org2.example.com/msp/signcerts/peer1.org2.example.com-cert.pem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/resources/crypto-config/peerOrganizations/org2.example.com/peers/peer1.org2.example.com/msp/tlscacerts/tlsca.org2.example.com-cert.pem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/resources/crypto-config/peerOrganizations/org2.example.com/peers/peer1.org2.example.com/tls/ca.crt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/resources/crypto-config/peerOrganizations/org2.example.com/peers/peer1.org2.example.com/tls/server.crt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/resources/crypto-config/peerOrganizations/org2.example.com/peers/peer1.org2.example.com/tls/server.key" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/resources/crypto-config/peerOrganizations/org2.example.com/tlsca/priv_sk" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/resources/crypto-config/peerOrganizations/org2.example.com/tlsca/tlsca.org2.example.com-cert.pem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/resources/crypto-config/peerOrganizations/org2.example.com/users/Admin@org2.example.com/msp/cacerts/ca.org2.example.com-cert.pem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/resources/crypto-config/peerOrganizations/org2.example.com/users/Admin@org2.example.com/msp/config.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/resources/crypto-config/peerOrganizations/org2.example.com/users/Admin@org2.example.com/msp/keystore/priv_sk" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/resources/crypto-config/peerOrganizations/org2.example.com/users/Admin@org2.example.com/msp/signcerts/Admin@org2.example.com-cert.pem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/resources/crypto-config/peerOrganizations/org2.example.com/users/Admin@org2.example.com/msp/tlscacerts/tlsca.org2.example.com-cert.pem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/resources/crypto-config/peerOrganizations/org2.example.com/users/Admin@org2.example.com/tls/ca.crt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/resources/crypto-config/peerOrganizations/org2.example.com/users/Admin@org2.example.com/tls/client.crt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/resources/crypto-config/peerOrganizations/org2.example.com/users/Admin@org2.example.com/tls/client.key" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/resources/crypto-config/peerOrganizations/org2.example.com/users/User1@org2.example.com/msp/cacerts/ca.org2.example.com-cert.pem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/resources/crypto-config/peerOrganizations/org2.example.com/users/User1@org2.example.com/msp/config.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/resources/crypto-config/peerOrganizations/org2.example.com/users/User1@org2.example.com/msp/keystore/priv_sk" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/resources/crypto-config/peerOrganizations/org2.example.com/users/User1@org2.example.com/msp/signcerts/User1@org2.example.com-cert.pem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/resources/crypto-config/peerOrganizations/org2.example.com/users/User1@org2.example.com/msp/tlscacerts/tlsca.org2.example.com-cert.pem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/resources/crypto-config/peerOrganizations/org2.example.com/users/User1@org2.example.com/tls/ca.crt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/resources/crypto-config/peerOrganizations/org2.example.com/users/User1@org2.example.com/tls/client.crt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/resources/crypto-config/peerOrganizations/org2.example.com/users/User1@org2.example.com/tls/client.key" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/resources/curve_a.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/resources/user-config/config-org1-peer0.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/resources/user-config/config-org1-peer1.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/resources/user-config/config-org2-peer0.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/main/resources/user-config/config-org2-peer1.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bidder/src/test/java/com/njupt/bidder/BidderConfigApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Fabric-CA-Server/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Fabric-CA-Server/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Fabric-CA-Server/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Fabric-CA-Server/src/main/java/com/njupt/fabricca/FabricCaServerApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Fabric-CA-Server/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Fabric-CA-Server/src/test/java/com/njupt/fabricca/FabricCaServerApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Fabric-Chaincode/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Fabric-Chaincode/src/main/java/com/njupt/chaincode/SealedBidAuctionChaincode.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Fabric-Chaincode/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Fabric-Chaincode/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Fabric-Chaincode/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Fabric-Chaincode/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Fabric-Chaincode/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PrivateKeyGenerator/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PrivateKeyGenerator/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PrivateKeyGenerator/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PrivateKeyGenerator/server.keystore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PrivateKeyGenerator/src/main/java/com/njupt/pkg/PrivateKeyGeneratorApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PrivateKeyGenerator/src/main/java/com/njupt/pkg/controller/PrivateKeyGeneratorController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PrivateKeyGenerator/src/main/java/com/njupt/pkg/dao/PrivateKeyGenerator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PrivateKeyGenerator/src/main/java/com/njupt/pkg/service/PrivateKeyGeneratorService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PrivateKeyGenerator/src/main/java/com/njupt/pkg/service/impl/PrivateKeyGeneratorServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PrivateKeyGenerator/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PrivateKeyGenerator/src/main/resources/curve_a.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PrivateKeyGenerator/src/test/java/com/njupt/pkg/PrivateKeyGeneratorApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bidder/src/main/resources/user-config/config-org1-peer0.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Bidder/src/main/resources/user-config/config-org1-peer0.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bidder/src/main/resources/user-config/config-org1-peer1.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Bidder/src/main/resources/user-config/config-org1-peer1.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bidder/src/main/resources/user-config/config-org2-peer0.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Bidder/src/main/resources/user-config/config-org2-peer0.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bidder/src/main/resources/user-config/config-org2-peer1.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Bidder/src/main/resources/user-config/config-org2-peer1.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fabric-Chaincode/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Fabric-Chaincode/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fabric-network/Network-Startup.md" beforeDir="false" afterPath="$PROJECT_DIR$/../fabric-network/Network-Startup.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fabric-network/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../fabric-network/config.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fabric-network/fixtures/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../fabric-network/fixtures/docker-compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fabric-network/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../fabric-network/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -212,29 +56,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "/home/indistinguishable/Code/Fabric-Based-Sealed-bid-auction/Sealed-Bid",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.14453125",
-    "project.structure.side.proportion": "0.2719919",
-    "settings.editor.selected.configurable": "reference.settings.ide.settings.new.ui",
-    "spring.configuration.checksum": "a5366081a6a06cbf22786bf74aa47cbf",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/indistinguishable/Code/Fabric-Based-Sealed-bid-auction/Sealed-Bid&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.14453125&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2719919&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.new.ui&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;a5366081a6a06cbf22786bf74aa47cbf&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Benchmark/src/main/resources" />
@@ -258,7 +102,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Benchmark">
+  <component name="RunManager" selected="Spring Boot.BidderApplication-org2-peer1">
     <configuration name="Benchmark" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Benchmark" />
       <module name="Benchmark" />
@@ -314,7 +158,7 @@
     <configuration name="BidderApplication-org1-peer0" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" activateToolWindowBeforeRun="false">
       <option name="INCLUDE_PROVIDED_SCOPE" value="false" />
       <module name="Bidder" />
-      <option name="PROGRAM_PARAMETERS" value="--n=4 --identity=bidder1 --filePath=$PROJECT_DIR$/Bidder/src/main/resources/user-config/config-org1-peer0.yml" />
+      <option name="PROGRAM_PARAMETERS" value="--n=4 --identity=bidder1 --filePath=./Bidder/src/main/resources/user-config/config-org1-peer0.yml" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.njupt.bidder.BidderApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -322,7 +166,7 @@
     </configuration>
     <configuration name="BidderApplication-org1-peer1" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="Bidder" />
-      <option name="PROGRAM_PARAMETERS" value="--n=4 --identity=bidder2 --filePath=$PROJECT_DIR$/Bidder/src/main/resources/user-config/config-org1-peer1.yml" />
+      <option name="PROGRAM_PARAMETERS" value="--n=4 --identity=bidder2 --filePath=./Bidder/src/main/resources/user-config/config-org1-peer1.yml" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.njupt.bidder.BidderApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -330,7 +174,7 @@
     </configuration>
     <configuration name="BidderApplication-org2-peer0" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="Bidder" />
-      <option name="PROGRAM_PARAMETERS" value="--n=4 --identity=bidder3 --filePath=$PROJECT_DIR$/Bidder/src/main/resources/user-config/config-org2-peer0.yml" />
+      <option name="PROGRAM_PARAMETERS" value="--n=4 --identity=bidder3 --filePath=./Bidder/src/main/resources/user-config/config-org2-peer0.yml" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.njupt.bidder.BidderApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -338,15 +182,8 @@
     </configuration>
     <configuration name="BidderApplication-org2-peer1" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="Bidder" />
-      <option name="PROGRAM_PARAMETERS" value="--n=4 --identity=bidder4 --filePath=$PROJECT_DIR$/Bidder/src/main/resources/user-config/config-org2-peer1.yml" />
+      <option name="PROGRAM_PARAMETERS" value="--n=4 --identity=bidder4 --filePath=./Bidder/src/main/resources/user-config/config-org2-peer1.yml" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.njupt.bidder.BidderApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FabricCaServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="Fabric-CA-Server" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.njupt.fabricca.FabricCaServerApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -370,7 +207,6 @@
       <item itemvalue="Application.FabricInit" />
       <item itemvalue="JUnit.BidderConfigApplicationTests.contextLoads" />
       <item itemvalue="JUnit.PrivateKeyGeneratorApplicationTests.testPrivateKeyGenerator (1)" />
-      <item itemvalue="Spring Boot.FabricCaServerApplication" />
       <item itemvalue="Spring Boot.BidderApplication-org1-peer0" />
       <item itemvalue="Spring Boot.BidderApplication-org1-peer1" />
       <item itemvalue="Spring Boot.BidderApplication-org2-peer0" />
@@ -379,8 +215,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Benchmark" />
         <item itemvalue="Spring Boot.PrivateKeyGeneratorApplication" />
+        <item itemvalue="Application.Benchmark" />
         <item itemvalue="JUnit.BidderConfigApplicationTests.contextLoads" />
         <item itemvalue="JUnit.PrivateKeyGeneratorApplicationTests.testPrivateKeyGenerator (1)" />
         <item itemvalue="Application.FabricInit" />
@@ -431,7 +267,9 @@
       <workItem from="1683112018769" duration="1315000" />
       <workItem from="1683610400769" duration="7665000" />
       <workItem from="1695566251812" duration="42000" />
-      <workItem from="1695566301018" duration="364000" />
+      <workItem from="1695566301018" duration="1128000" />
+      <workItem from="1695606574577" duration="874000" />
+      <workItem from="1695626979107" duration="1035000" />
     </task>
     <servers />
   </component>

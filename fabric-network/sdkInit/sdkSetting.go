@@ -234,7 +234,7 @@ func ApproveLifecycle(info *SdkEnvInfo, sequence int64, packageID string) error 
 	}
 	fmt.Println(">> 智能合约已经就绪")
 
-	time.Sleep(4 * time.Second)
+	time.Sleep(4 * time.Second) // 等待Fabric网络同步，不等待的话可能会报错，原因不详
 
 	// 提交合约
 	fmt.Println(">> 提交智能合约定义......")

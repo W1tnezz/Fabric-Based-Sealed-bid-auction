@@ -10,7 +10,9 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
+    <groupId>com.example</groupId>
     <artifactId>Fabric-Chaincode</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
 
     <properties>
         <java.version>1.8</java.version>
@@ -71,7 +73,6 @@
     </dependencies>
 
     <build>
-        <sourceDirectory>src/Benchmark/java</sourceDirectory>
         <plugins>
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
