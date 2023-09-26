@@ -6,15 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="75829383-fb15-45bb-a7b0-951694b20433" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bidder/src/main/resources/user-config/config-org1-peer0.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Bidder/src/main/resources/user-config/config-org1-peer0.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bidder/src/main/resources/user-config/config-org1-peer1.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Bidder/src/main/resources/user-config/config-org1-peer1.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bidder/src/main/resources/user-config/config-org2-peer0.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Bidder/src/main/resources/user-config/config-org2-peer0.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bidder/src/main/resources/user-config/config-org2-peer1.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Bidder/src/main/resources/user-config/config-org2-peer1.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fabric-Chaincode/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Fabric-Chaincode/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fabric-network/Network-Startup.md" beforeDir="false" afterPath="$PROJECT_DIR$/../fabric-network/Network-Startup.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fabric-network/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../fabric-network/config.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fabric-network/fixtures/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../fabric-network/fixtures/docker-compose.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fabric-network/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../fabric-network/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -270,6 +261,7 @@
       <workItem from="1695566301018" duration="1128000" />
       <workItem from="1695606574577" duration="874000" />
       <workItem from="1695626979107" duration="1035000" />
+      <workItem from="1695694457550" duration="2346000" />
     </task>
     <servers />
   </component>
