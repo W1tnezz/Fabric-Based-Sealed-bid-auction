@@ -1,9 +1,9 @@
 # Fabric-Based-Sealed-bid-auction
 ## 1. 简介
 
-基于Fabric区块链和身份基同态加密算法的密封电子拍卖协议。
+基于Hyperledger Fabric区块链和身份基同态加密算法的密封电子拍卖协议。
 
-该项目是论文的实现工作，论文水平一坨就不展示了。
+该项目是本人论文的实现工作，如果需要了解协议的理论部分可以参考：http://jcs.iie.ac.cn/xxaqxb/ch/reader/view_abstract.aspx?flag=2&file_no=202305220000003&journal_id=xxaqxb。
 
 
 
