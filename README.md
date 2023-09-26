@@ -112,3 +112,12 @@ $ ./fabric-starter
 - filePath：该用户的配置信息文件路径；
 
 启动完成后，bidder程序会自动进行拍卖流程。
+
+### 5. 关闭容器命令
+
+**进入/fabric-network/fixtures/目录**下执行命令：
+
+```shell
+$ docker-compose down -v
+```
+
