@@ -113,7 +113,7 @@ $ ./fabric-starter
 
 启动完成后，bidder程序会自动进行拍卖流程。
 
-### 5. 关闭容器命令
+#### 5. 关闭容器
 
 **进入/fabric-network/fixtures/目录**下执行命令：
 
