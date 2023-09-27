@@ -6,7 +6,6 @@ import org.hyperledger.fabric.contract.annotation.Contract;
 import org.hyperledger.fabric.contract.annotation.Default;
 import org.hyperledger.fabric.contract.annotation.Transaction;
 import org.hyperledger.fabric.shim.ChaincodeStub;
-import java.nio.charset.StandardCharsets;
 
 @Contract(name = "sealed-bid")
 @Default
@@ -35,7 +34,7 @@ public class SealedBidAuctionChaincode implements ContractInterface {
     public String submitFirstRoundInput(final Context ctx, final String identity, final String input){
         ChaincodeStub stub = ctx.getStub();
         stub.putStringState(identity + "_first_round_input", input);
-        stub.setEvent("newFirstRoundInput", input.getBytes(StandardCharsets.ISO_8859_1));
+        stub.setEvent("newFirstRoundInput", input.getBytes());
         return stub.getTxId();
     }
 
@@ -49,7 +48,7 @@ public class SealedBidAuctionChaincode implements ContractInterface {
     public String submitSecondRoundInput(final Context ctx, final String identity, final String input){
         ChaincodeStub stub = ctx.getStub();
         stub.putStringState(identity + "_second_round_input", input);
-        stub.setEvent("newSecondRoundInput", input.getBytes(StandardCharsets.ISO_8859_1));
+        stub.setEvent("newSecondRoundInput", input.getBytes());
         return stub.getTxId();
     }
 
@@ -63,7 +62,7 @@ public class SealedBidAuctionChaincode implements ContractInterface {
     public String submitThirdRoundInput(final Context ctx, final String identity, final String input){
         ChaincodeStub stub = ctx.getStub();
         stub.putStringState(identity + "_third_round_input", input);
-        stub.setEvent("newThirdRoundInput", input.getBytes(StandardCharsets.ISO_8859_1));
+        stub.setEvent("newThirdRoundInput", input.getBytes());
         return stub.getTxId();
     }
 

@@ -64,16 +64,15 @@ public class Bidder {
     }
 
     /**
-     * 提交第一轮输入，将序列化后的字节数组使用ISO_8859_1编码方式编码为字符串格式，
+     * 提交第一轮输入，将序列化后的字节数组使用
      * 目的是实现用字符串格式保存并传输字节数组，因为Fabric提供的链码调用接口只能传输字符串；
      */
     public void submitFirstRoundInput() throws IOException, EndorseException, CommitException, SubmitException, CommitStatusException {
         logger.info(identity + "开始计算自己的第一轮输入并提交到Fabric上");
-        byte[] input = SerializeUtils.firstRoundInput2Bytes(this.calFirstRoundInput());
-        logger.info("第一轮输入对象序列化后长度为:" + input.length + "byte");
-        String inputStr = new String(input, StandardCharsets.ISO_8859_1);
+        String input = SerializeUtils.firstRoundInput2Bytes(this.calFirstRoundInput());
+        logger.info("第一轮输入对象序列化后长度为:" + input.length() + "byte");
         contract.newProposal("submitFirstRoundInput")
-                .addArguments(this.identity, inputStr)
+                .addArguments(this.identity, input)
                 .build()
                 .endorse()
                 .submit();
@@ -107,11 +106,10 @@ public class Bidder {
 
     public void submitSecondRoundInput() throws IOException, EndorseException, CommitException, SubmitException, CommitStatusException {
         logger.info(identity + "开始计算自己的第二轮输入并提交到Fabric上");
-        byte[] input = SerializeUtils.secondRoundInput2Bytes(calSecondRoundInput(), this.BIDDER_NUM - 1);
-        logger.info(BIDDER_NUM + "个拍卖者时，" + "第二轮输入对象序列化后长度为:" + input.length + "byte");
-        String inputStr = new String(input, StandardCharsets.ISO_8859_1);
+        String input = SerializeUtils.secondRoundInput2Bytes(calSecondRoundInput(), this.BIDDER_NUM - 1);
+        logger.info(BIDDER_NUM + "个拍卖者时，" + "第二轮输入对象序列化后长度为:" + input.length() + "byte");
         contract.newProposal("submitSecondRoundInput")
-                .addArguments(this.identity, inputStr)
+                .addArguments(this.identity, input)
                 .build()
                 .endorse()
                 .submit();
@@ -222,11 +220,10 @@ public class Bidder {
 
     public void submitThirdRoundInput() throws IOException, EndorseException, CommitException, SubmitException, CommitStatusException {
         logger.info(identity + "开始计算自己的第三轮输入并提交到Fabric上");
-        byte[] input = SerializeUtils.thirdRoundInput2Bytes(calThirdRoundInput(), this.BIDDER_NUM - 1);
-        logger.info(BIDDER_NUM + "个拍卖者时，" + "第三轮输入对象序列化后长度为:" + input.length + "byte");
-        String inputStr = new String(input, StandardCharsets.ISO_8859_1);
+        String input = SerializeUtils.thirdRoundInput2Bytes(calThirdRoundInput(), this.BIDDER_NUM - 1);
+        logger.info(BIDDER_NUM + "个拍卖者时，" + "第三轮输入对象序列化后长度为:" + input.length() + "byte");
         contract.newProposal("submitThirdRoundInput")
-                .addArguments(this.identity, inputStr)
+                .addArguments(this.identity, input)
                 .build()
                 .endorse()
                 .submit();
